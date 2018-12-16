@@ -62,8 +62,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="SimWinGamePad, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimWinGamePad.1.0.5\lib\net40\SimWinGamePad.dll</HintPath>
+    <Reference Include="SimWinGamePad, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimWinGamePad.1.0.6\lib\net40\SimWinGamePad.dll</HintPath>
     </Reference>
     <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -294,9 +294,7 @@
     <None Include="Resources\exit-to-app.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ScpDriverInstaller.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="ScpDriverInstaller.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
