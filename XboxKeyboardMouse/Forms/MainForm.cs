@@ -101,7 +101,38 @@ namespace XboxKeyboardMouse.Forms
 
             StatusSync.State = 3;
         }
-    #endregion
+
+        public Boolean StatusSyncCheck() {
+            if (StatusSync.State == 1)
+            {
+                return true;
+            }
+            return false;
+        
+        }
+
+        public Boolean AutoCheck()
+        {
+
+            if (AutomateInput.Text == "YES")
+            {
+                return true;
+            }
+
+            return false;
+
+        }
+
+        public void AutoEnd(string value)
+        {
+            if (InvokeRequired)
+            {
+                this.Invoke(new Action<string>(AutoEnd), new object[] { value });
+                return;
+            }
+            AutomateInput.Text = value;
+        }
+        #endregion
 
         public bool HitTest(PictureBox control, int x, int y) {
             var result = false;
@@ -178,6 +209,19 @@ namespace XboxKeyboardMouse.Forms
             // Save the current active config 
             var file = Program.ActiveConfig.Name + ".ini";
             Config.Data.Save(file, Program.ActiveConfig);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (AutomateInput.Text == "" || AutomateInput.Text == "NO")
+            {
+                AutomateInput.Text = "YES";
+            }
+            else
+            {
+                AutomateInput.Text = "NO";
+            }
         }
     }
 }

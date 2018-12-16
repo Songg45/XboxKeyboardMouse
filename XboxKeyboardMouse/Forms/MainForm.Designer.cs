@@ -29,6 +29,8 @@
             this.btnExitApp = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.AutomateInputButton = new System.Windows.Forms.Button();
+            this.AutomateInput = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.powerButton)).BeginInit();
             this.SuspendLayout();
@@ -137,12 +139,32 @@
             this.materialFlatButton1.UseVisualStyleBackColor = true;
             this.materialFlatButton1.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
+            // AutomateInputButton
+            // 
+            this.AutomateInputButton.Location = new System.Drawing.Point(18, 340);
+            this.AutomateInputButton.Name = "AutomateInputButton";
+            this.AutomateInputButton.Size = new System.Drawing.Size(55, 23);
+            this.AutomateInputButton.TabIndex = 6;
+            this.AutomateInputButton.Text = "Activate";
+            this.AutomateInputButton.UseVisualStyleBackColor = true;
+            this.AutomateInputButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // AutomateInput
+            // 
+            this.AutomateInput.Location = new System.Drawing.Point(79, 340);
+            this.AutomateInput.Name = "AutomateInput";
+            this.AutomateInput.ReadOnly = true;
+            this.AutomateInput.Size = new System.Drawing.Size(46, 20);
+            this.AutomateInput.TabIndex = 7;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(230, 357);
+            this.Controls.Add(this.AutomateInput);
+            this.Controls.Add(this.AutomateInputButton);
             this.Controls.Add(this.btnExitApp);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialFlatButton2);
@@ -166,5 +188,7 @@
         private System.Windows.Forms.Panel panel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialFlatButton btnExitApp;
+        private System.Windows.Forms.Button AutomateInputButton;
+        private System.Windows.Forms.TextBox AutomateInput;
     }
 }

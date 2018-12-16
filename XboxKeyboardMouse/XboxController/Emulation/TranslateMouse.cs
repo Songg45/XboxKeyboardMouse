@@ -399,7 +399,6 @@ namespace XboxKeyboardMouse {
                 SimGamePad.Instance.State[0].LeftStickY = y;
             }
 
-            SimGamePad.Instance.Update();
         }
     }
 }
