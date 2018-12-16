@@ -7,6 +7,11 @@ It sends keyboard and mouse inputs to an emulated Xbox controller using SCP driv
 
 Note: This app only starts when the Xbox streaming app is in the foreground.
 
+UPDATES:
+1) Removed SimGamePad.Instance.Update() from TranslateMouse
+2) Added a button on MainForm to toggle automation on/off
+3) Automated button presses for Cockeral potion in Kingdom Come: Deliverance. It misses one A button press consistantly, however :(
+
 ![Screenshot](https://cloud.githubusercontent.com/assets/6545688/23099037/50091be8-f655-11e6-838c-b94d7a62572b.PNG "Image of the GUI as of 11/12/16")
 
 # Prerequisites
